@@ -1,61 +1,66 @@
 <?php include_once('header.php') ?>
 
-        <div class="main-container">
-            <div class="main wrapper clearfix">
+        
+             <div class="row">
+                <div class="col-md-12">
                 <article>
                     
                     <script>
-                    function initialize() {
-                        var mapOptions = {
-                            zoom: 4,
-                            center:  new google.maps.LatLng(-16.037716138237464, -51.0948105405151),
-                            panControl: false,
-    						zoomControl: true,
-    						scaleControl: false,
-    						streetViewControl:false,
-    						mapTypeControl:false
-                        };
 
-                   
-                        var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+function initialize() {
+    var myLatlng = new google.maps.LatLng(-23.745687716160287, -46.68639569999999);
 
+    var mapOptions = {
+      zoom: 15,
+      center: myLatlng
+    };
 
-                        <?php foreach ($lojas as $item):?>
-                        var <?php echo $item->uf ?>_infowindow = new google.maps.InfoWindow({
+    var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 
-                            content: 
-                            '<div class="content">'+
-                            '<div class="bodyContent">'+
-                            '<a href="javascript:void(0);" onclick=infoUf("<?php echo $item->uf ?>")><?php echo number_format($item->total, 0, '','.') ?> lojas</a>'+
-                            '</div>'+
-                            '</div>'
+    var contentString = '<div id="content">'+
+        '<div id="siteNotice">'+
+        '</div>'+
+        '<h1 id="firstHeading" class="firstHeading">Uma denúncia</h1>'+
+        '<div id="bodyContent">'+
+        '<p>Aqui vem a denúncia.</p> <a href="javascript:void(0)" onclick="alert(1)" id="teste">aaaa</a>'+
+        '</div>'+
+        '</div>';
 
-                        });
-                        var <?php echo $item->uf ?>_Latlng = new google.maps.LatLng(<?php echo trim($item->lat) ?>, <?php echo trim($item->long) ?>);
-                        var <?php echo $item->uf ?>_marker = new google.maps.Marker({
-                            position: <?php echo $item->uf ?>_Latlng,
-                            map: map,
-                            animation: google.maps.Animation.DROP,
-                            title: '<?php echo $item->uf ?>'
-                        });
-                        google.maps.event.addListener(<?php echo $item->uf ?>_marker, 'click', function() {
-                            <?php echo $item->uf ?>_infowindow.open(map,<?php echo $item->uf ?>_marker);
-                        });
-                        <?php endforeach; ?>
+    var infowindow = new google.maps.InfoWindow({
+        content: contentString
+    });
 
-                        map.data.loadGeoJson('<?php echo base_url() ?>Brasil.json');
-                        var featureStyle = {
-                                fillColor: '#777777',
-                                strokeWeight: 0.5
-                            }
-                        map.data.setStyle(featureStyle);
+    var marker = new google.maps.Marker({
+        position: myLatlng,
+        map: map,
+        animation: google.maps.Animation.DROP,
+        title: 'Uma denúncia'
+    });
+    google.maps.event.addListener(marker, 'click', function() {
+        infowindow.open(map,marker);
+    });
+ 
 
-                    }
-                    google.maps.event.addDomListener(window, 'load', initialize);
-                    </script>
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+</script>
+
                     <div id="map-canvas"></div>
-                </article>
-                <?php include_once('sidebar.php') ?>                
+                </article>   
+                </div> 
+
             </div> <!-- #main -->
+            <div class="row">
+                    <div class="col-md-6">
+                        <a href="#" class="btn btn-primary btn-rounded btn-lg btn-twitter btn-left-icon btn-full-width ng-isolate-scope">
+                            Faça sua Denúncia
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <a class="btn btn-primary btn-rounded btn-lg btn-facebook btn-left-icon btn-full-width ng-isolate-scope" href="#">Como Funciona</a>
+                    </div>
+                </div>    
         </div> <!-- #main-container -->
 <?php include_once('footer.php') ?>

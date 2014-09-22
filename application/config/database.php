@@ -38,8 +38,8 @@
 | the active record class
 */
 
-$active_group = 'dev';
-$active_record = TRUE;
+$active_group = 'local';
+$active_record = FALSE;
 
 
 
@@ -62,7 +62,7 @@ $db['dev']['stricton'] = FALSE;
 $db['local']['hostname'] = 'localhost';
 $db['local']['username'] = 'root';
 $db['local']['password'] = 'senha';
-$db['local']['database'] = 'sillycomm';
+$db['local']['database'] = 'informeiSul';
 $db['local']['dbdriver'] = 'mysql';
 $db['local']['dbprefix'] = '';
 $db['local']['pconnect'] = FALSE;

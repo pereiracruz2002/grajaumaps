@@ -1,0 +1,364 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"base",
+				"base_url"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "application/controllers/mapa.php",
+			"settings":
+			{
+				"buffer_size": 298,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<?php include_once('header.php') ?>\n\n        \n             <div class=\"row\">\n                <div class=\"col-md-12\">\n                <article>\n                    \n                    <script>\n\nfunction initialize() {\n    var myLatlng = new google.maps.LatLng(-23.745687716160287, -46.68639569999999);\n\n    var mapOptions = {\n      zoom: 15,\n      center: myLatlng\n    };\n\n    var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);\n\n    var contentString = '<div id=\"content\">'+\n        '<div id=\"siteNotice\">'+\n        '</div>'+\n        '<h1 id=\"firstHeading\" class=\"firstHeading\">Uma denúncia</h1>'+\n        '<div id=\"bodyContent\">'+\n        '<p>Aqui vem a denúncia.</p> <a href=\"javascript:void(0)\" onclick=\"alert(1)\" id=\"teste\">aaaa</a>'+\n        '</div>'+\n        '</div>';\n\n    var infowindow = new google.maps.InfoWindow({\n        content: contentString\n    });\n\n    var marker = new google.maps.Marker({\n        position: myLatlng,\n        map: map,\n        animation: google.maps.Animation.DROP,\n        title: 'Uma denúncia'\n    });\n    google.maps.event.addListener(marker, 'click', function() {\n        infowindow.open(map,marker);\n    });\n \n\n}\n\ngoogle.maps.event.addDomListener(window, 'load', initialize);\n\n</script>\n\n                    <div id=\"map-canvas\"></div>\n                </article>   \n                </div> \n\n            </div> <!-- #main -->\n            <div class=\"row\">\n                    <div class=\"col-md-6\">\n                        <a href=\"#\" class=\"btn btn-primary btn-rounded btn-lg  btn-left-icon btn-full-width ng-isolate-scope\">\n                            Faça sua Denúncia\n                        </a>\n                    </div>\n                    <div class=\"col-md-6\">\n                        <a class=\"btn btn-primary btn-rounded btn-lg btn-facebook btn-left-icon btn-full-width ng-isolate-scope\" href=\"#\">Como Funciona</a>\n                    </div>\n                </div>    \n        </div> <!-- #main-container -->\n<?php include_once('footer.php') ?>\n",
+			"file": "application/views/mapa.php",
+			"file_size": 2043,
+			"file_write_time": 1411338631000000,
+			"settings":
+			{
+				"buffer_size": 2027,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/flavio/Downloads/maps/mapa2.html",
+			"settings":
+			{
+				"buffer_size": 2609,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/views/header.php",
+			"settings":
+			{
+				"buffer_size": 2034,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/css/main.css",
+			"settings":
+			{
+				"buffer_size": 298,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/views/footer.php",
+			"settings":
+			{
+				"buffer_size": 442,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/flavio/ambiente/mapa/index.php",
+		"/home/flavio/ambiente/informeiSul/application/config/config.php",
+		"/home/flavio/ambiente/informeiSul/application/config/routes.php",
+		"/home/flavio/ambiente/informeiSul/application/config/database.php",
+		"/home/flavio/ambiente/informeiSul/application/controllers/mapa.php",
+		"/home/flavio/vagrant-ambiente/simple-vagrant-lamp/Vagrantfile",
+		"/home/flavio/ambiente/Vagrantfile",
+		"/home/flavio/ambiente/mapa/composer.json"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "application/controllers/mapa.php",
+					"settings":
+					{
+						"buffer_size": 298,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								241,
+								241
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "application/views/mapa.php",
+					"settings":
+					{
+						"buffer_size": 2027,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1576,
+								1576
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 282.0,
+						"translation.y": 499.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/home/flavio/Downloads/maps/mapa2.html",
+					"settings":
+					{
+						"buffer_size": 2609,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2549,
+								2549
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 745.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "application/views/header.php",
+					"settings":
+					{
+						"buffer_size": 2034,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1162,
+								1162
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 87.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "assets/css/main.css",
+					"settings":
+					{
+						"buffer_size": 298,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								294,
+								294
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "application/views/footer.php",
+					"settings":
+					{
+						"buffer_size": 442,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								302,
+								302
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 226.0,
+	"status_bar_visible": true
+}
