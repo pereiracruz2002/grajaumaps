@@ -14,6 +14,15 @@
         <link rel="stylesheet" href="<?=base_url()?>assets/css/main.css">
         <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
         <script>var base_url = "<?php echo base_url() ?>";</script>
+        <script>
+        function checkPassword(str)
+        {
+
+            var re = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])\w{6,}$/;
+            return re.test(str);
+        }
+
+        </script>
 
         <!--[if lt IE 9]>
         <script src="<?php echo base_url() ?>js/vendor/html5-3.6-respond-1.1.0.min.js"></script>

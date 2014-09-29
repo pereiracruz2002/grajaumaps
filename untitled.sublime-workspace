@@ -20,21 +20,10 @@
 			}
 		},
 		{
-			"contents": "<?php include_once('header.php') ?>\n\n        \n             <div class=\"row\">\n                <div class=\"col-md-12\">\n                <article>\n                    \n                    <script>\n\nfunction initialize() {\n    var myLatlng = new google.maps.LatLng(-23.745687716160287, -46.68639569999999);\n\n    var mapOptions = {\n      zoom: 15,\n      center: myLatlng\n    };\n\n    var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);\n\n    var contentString = '<div id=\"content\">'+\n        '<div id=\"siteNotice\">'+\n        '</div>'+\n        '<h1 id=\"firstHeading\" class=\"firstHeading\">Uma denúncia</h1>'+\n        '<div id=\"bodyContent\">'+\n        '<p>Aqui vem a denúncia.</p> <a href=\"javascript:void(0)\" onclick=\"alert(1)\" id=\"teste\">aaaa</a>'+\n        '</div>'+\n        '</div>';\n\n    var infowindow = new google.maps.InfoWindow({\n        content: contentString\n    });\n\n    var marker = new google.maps.Marker({\n        position: myLatlng,\n        map: map,\n        animation: google.maps.Animation.DROP,\n        title: 'Uma denúncia'\n    });\n    google.maps.event.addListener(marker, 'click', function() {\n        infowindow.open(map,marker);\n    });\n \n\n}\n\ngoogle.maps.event.addDomListener(window, 'load', initialize);\n\n</script>\n\n                    <div id=\"map-canvas\"></div>\n                </article>   \n                </div> \n\n            </div> <!-- #main -->\n            <div class=\"row\">\n                    <div class=\"col-md-6\">\n                        <a href=\"#\" class=\"btn btn-primary btn-rounded btn-lg  btn-left-icon btn-full-width ng-isolate-scope\">\n                            Faça sua Denúncia\n                        </a>\n                    </div>\n                    <div class=\"col-md-6\">\n                        <a class=\"btn btn-primary btn-rounded btn-lg btn-facebook btn-left-icon btn-full-width ng-isolate-scope\" href=\"#\">Como Funciona</a>\n                    </div>\n                </div>    \n        </div> <!-- #main-container -->\n<?php include_once('footer.php') ?>\n",
 			"file": "application/views/mapa.php",
-			"file_size": 2043,
-			"file_write_time": 1411338631000000,
 			"settings":
 			{
-				"buffer_size": 2027,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/flavio/Downloads/maps/mapa2.html",
-			"settings":
-			{
-				"buffer_size": 2609,
+				"buffer_size": 1974,
 				"line_ending": "Unix"
 			}
 		},
@@ -42,7 +31,7 @@
 			"file": "application/views/header.php",
 			"settings":
 			{
-				"buffer_size": 2034,
+				"buffer_size": 2223,
 				"line_ending": "Unix"
 			}
 		},
@@ -50,7 +39,7 @@
 			"file": "assets/css/main.css",
 			"settings":
 			{
-				"buffer_size": 298,
+				"buffer_size": 339,
 				"line_ending": "Unix"
 			}
 		},
@@ -58,7 +47,7 @@
 			"file": "application/views/footer.php",
 			"settings":
 			{
-				"buffer_size": 442,
+				"buffer_size": 8021,
 				"line_ending": "Unix"
 			}
 		}
@@ -87,6 +76,7 @@
 	},
 	"file_history":
 	[
+		"/home/flavio/Downloads/maps/mapa2.html",
 		"/home/flavio/ambiente/mapa/index.php",
 		"/home/flavio/ambiente/informeiSul/application/config/config.php",
 		"/home/flavio/ambiente/informeiSul/application/config/routes.php",
@@ -129,7 +119,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 4,
 			"sheets":
 			[
 				{
@@ -165,99 +155,71 @@
 					"file": "application/views/mapa.php",
 					"settings":
 					{
-						"buffer_size": 2027,
+						"buffer_size": 1974,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1576,
-								1576
+								423,
+								423
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 282.0,
-						"translation.y": 499.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/home/flavio/Downloads/maps/mapa2.html",
-					"settings":
-					{
-						"buffer_size": 2609,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2549,
-								2549
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 745.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "application/views/header.php",
-					"settings":
-					{
-						"buffer_size": 2034,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1162,
-								1162
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 87.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "assets/css/main.css",
+					"buffer": 2,
+					"file": "application/views/header.php",
 					"settings":
 					{
-						"buffer_size": 298,
+						"buffer_size": 2223,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								294,
-								294
+								975,
+								975
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "assets/css/main.css",
+					"settings":
+					{
+						"buffer_size": 339,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								337,
+								337
 							]
 						],
 						"settings":
@@ -267,25 +229,25 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 141.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 4,
 					"file": "application/views/footer.php",
 					"settings":
 					{
-						"buffer_size": 442,
+						"buffer_size": 8021,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								302,
-								302
+								6999,
+								6999
 							]
 						],
 						"settings":
@@ -295,7 +257,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 2052.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
